@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ericm\\Documents\\University\\Malmö\\Informationsarkitekt\\Termin 3\\Objektsorienterad Python for IA\\Final Project'\\Pot Plant THE GAME\\Pot Plant the Game\\Pot Plant the Game.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ericm\\Documents\\University\\Malmö\\Informationsarkitekt\\Termin 3\\Objektsorienterad Python for IA\\Final Project'\\Pot Plant THE GAME\\Pot Plant the Game\\Pot Plant the Game.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ericm\\Documents\\University\\Malmö\\Informationsarkitekt\\Termin 3\\Objektsorienterad Python for IA\\Final Project'\\Pot Plant THE GAME\\Pot Plant the Game\\Pot Plant the Game.csproj",
+        "projectName": "Pot Plant the Game",
+        "projectPath": "C:\\Users\\ericm\\Documents\\University\\Malmö\\Informationsarkitekt\\Termin 3\\Objektsorienterad Python for IA\\Final Project'\\Pot Plant THE GAME\\Pot Plant the Game\\Pot Plant the Game.csproj",
+        "packagesPath": "C:\\Users\\ericm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ericm\\Documents\\University\\Malmö\\Informationsarkitekt\\Termin 3\\Objektsorienterad Python for IA\\Final Project'\\Pot Plant THE GAME\\Pot Plant the Game\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ericm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
