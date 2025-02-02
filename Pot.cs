@@ -7,6 +7,7 @@ namespace Pot_Space
         /// </summary>
         private int weightCapacity;
         private bool isUpgradedPot;
+
         public Pot()
         {
             /// <summary>

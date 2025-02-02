@@ -57,6 +57,10 @@ namespace Pot_Plant_the_Game
 
             //set the water plant button to white
             daysSinceWaterBox.BackColor = Color.White;
+
+            //set the pot detection to transparent 
+            changePotButton.BackColor = Color.Transparent;
+            changePotButton.Checked = false;
         }
 
         private void nextDayButton_Click(object sender, EventArgs e)
