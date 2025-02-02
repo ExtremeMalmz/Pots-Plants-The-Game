@@ -54,7 +54,11 @@ namespace Pot_Plant_the_Game
             chooseYourPlantLabel.Visible = true;
             chooseRoseButton.Visible = true;
             chooseDaliaButton.Visible = true;
+
+            //set the water plant button to white
+            daysSinceWaterBox.BackColor = Color.White;
         }
+
         private void nextDayButton_Click(object sender, EventArgs e)
         {
             /// <summary>
@@ -74,16 +78,58 @@ namespace Pot_Plant_the_Game
                 daysSinceWaterBox.Text = Convert.ToString(plant.Get_daysSinceWatered());
 
                 changePotButton.Checked = arduino.shouldLightBeOn(plant, pot);
+                if(changePotButton.Checked )
+                {
+                    changePotButton.BackColor = Color.DarkRed;
+                }
+                else
+                {
+                    changePotButton.BackColor = Color.Transparent;
+                }
 
+                //check the water levels of the plant
+                CheckWater();
+                
                 //If plant weighs mroe than the pot
                 if (arduino.IsPlantWeightGreaterThanPotWeight(plant, pot))
                 {
                     DeathOfPlant();
                 }
+                
             }
             else
             {
                 DeathOfPlant();
+            }
+        }
+
+        private void CheckWater() {
+            /// <summary>
+            /// Checks what the water button color should be, yellow and red denote danger
+            /// </summary>
+            
+            if (plant.Get_name() == "Dalia")
+            {
+                if(plant.Get_daysSinceWatered() >= 1)
+                {
+                    daysSinceWaterBox.BackColor = Color.Yellow;
+                }
+                if(plant.Get_daysSinceWatered() > 2)
+                {
+                    daysSinceWaterBox.BackColor = Color.Red;
+                }
+            }
+
+            if (plant.Get_name() == "Rose")
+            {
+                if (plant.Get_daysSinceWatered() > 2)
+                {
+                    daysSinceWaterBox.BackColor = Color.Yellow;
+                }
+                if (plant.Get_daysSinceWatered() >= 6)
+                {
+                    daysSinceWaterBox.BackColor = Color.Red;
+                }
             }
         }
 
@@ -195,6 +241,7 @@ namespace Pot_Plant_the_Game
             
             plant.WaterPlant();
             daysSinceWaterBox.Text = Convert.ToString(plant.Get_daysSinceWatered());
+            daysSinceWaterBox.BackColor = Color.White;
         }
 
         private void changePotsButton_Click(object sender, EventArgs e)
