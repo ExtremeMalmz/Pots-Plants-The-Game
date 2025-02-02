@@ -1,0 +1,201 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{CD663D24-2B83-43E6-8E45-51AC6CC1FAC7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>PotsAndPlants</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arduino.cs" />
+    <Compile Include="Dailia.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plant.cs" />
+    <Compile Include="Pot.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Rose.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\sendemail-validate.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\logs\refs\remotes\origin\main" />
+    <None Include=".git\objects\05\3bec95cc8a244bd7373427a25202b91ba5a6d3" />
+    <None Include=".git\objects\07\afc964c262a24eae3f0198fc2077b3c8b79939" />
+    <None Include=".git\objects\0a\9585afb061f4744f3bf068d8f75620f8927c17" />
+    <None Include=".git\objects\0a\ac8c3b24b3d87bd295b086db0acfe012fa5be2" />
+    <None Include=".git\objects\0b\b80865fe4042b709ec137de198425623a72a3e" />
+    <None Include=".git\objects\0f\d3ec108277656973c8ca3e77bdae4059906615" />
+    <None Include=".git\objects\1e\0d92541fbec15689a14644c1ebb784af050018" />
+    <None Include=".git\objects\23\133573216e2b47a3f9f8cd63b6f1358b18d471" />
+    <None Include=".git\objects\26\971fa65d11bcdb1cd706edb94e6ff7d223c7db" />
+    <None Include=".git\objects\2e\386351c65d6dd800cdd337976458cf7c672341" />
+    <None Include=".git\objects\39\8a2839a8e890db5a2e6a9fc33d8b9b0baa2194" />
+    <None Include=".git\objects\41\eadab8ab85f1a216e0d22999bf580876674a78" />
+    <None Include=".git\objects\46\67f54a2cb946521c9191e57af2cc69ae990de2" />
+    <None Include=".git\objects\46\9208856b2eef35c5f216d07995c2cd5d497995" />
+    <None Include=".git\objects\4a\86e4e3b07f5f180c11f683f13f3e5ea0ff99ee" />
+    <None Include=".git\objects\4d\718cce3885fcfce540a60e6526cec24e4a2fb4" />
+    <None Include=".git\objects\4f\90c3b2aec2f998d52c0fbaf6a0fd05710b9954" />
+    <None Include=".git\objects\50\0eee3451fa3f6dd364dfbf724c63ff0c1936c9" />
+    <None Include=".git\objects\52\c2141f77d772dfa71f74517ade0cf3ba77a2ec" />
+    <None Include=".git\objects\58\9a3c3edb3ec3f952ef41f1499cc0d3efc571cc" />
+    <None Include=".git\objects\59\79894f709ae12c527c853c2c80260644443a0b" />
+    <None Include=".git\objects\5a\c54292e2a935d70ea96045465fef81a3d2a10b" />
+    <None Include=".git\objects\5b\00e21829e9bcd26c7c005caf520019d3ae3c5f" />
+    <None Include=".git\objects\5b\8268bb82fe2604728fd27992d556440a2f7d99" />
+    <None Include=".git\objects\5f\b188534d6005812333419e9af9efe39e39a52f" />
+    <None Include=".git\objects\60\18c62139362332ff4b8444a8d602de1fa639f6" />
+    <None Include=".git\objects\62\3d6f1ac2b7165bc0d0388435016111676890ac" />
+    <None Include=".git\objects\6e\41949e3fe8b25ff62339f9cfc45acb56d07dac" />
+    <None Include=".git\objects\6f\20ea0869b097f334cacf7809e416da84dcbe2d" />
+    <None Include=".git\objects\6f\adfe8ba22cd03f7f4e743ebb34114a3b904fd0" />
+    <None Include=".git\objects\72\76f87297cbbf7ad0191ead6d4d8a27e291894a" />
+    <None Include=".git\objects\75\69827433f403ddeff1fb2a8ce6f4161a30162f" />
+    <None Include=".git\objects\80\c5b1ac00d1979c32a10c4d62852f60fe8c46d3" />
+    <None Include=".git\objects\81\4d4e694a9845316dda104b45b9b177ea23482d" />
+    <None Include=".git\objects\82\36a8b68af04051c61d3ec118772fd352b70802" />
+    <None Include=".git\objects\90\e43ed4674b56383fc94ded4f9a5403b6de2d51" />
+    <None Include=".git\objects\92\a41091f3a23232f96d7cbee0f87cb9f9021745" />
+    <None Include=".git\objects\97\e1b65f9b8aa63b27217f37bedf9ab616337af5" />
+    <None Include=".git\objects\9f\10297d7b6fa305d2cc519187a39fdaf988644a" />
+    <None Include=".git\objects\9f\648a7925f918055af8f257d2edf8719120ce4c" />
+    <None Include=".git\objects\a6\270d616b59bc4d7d24809b465991604c0306e7" />
+    <None Include=".git\objects\ac\47a3aeff052418f7b992b8aa6ea55bd6db4c8d" />
+    <None Include=".git\objects\ad\e7f2180353c67507672fb0baa611f17045e8ca" />
+    <None Include=".git\objects\af\e6850a20886bf4b62f5b29118508120cf7d3b3" />
+    <None Include=".git\objects\b6\8e4445cd2160991575b5a21ea129796963c4e3" />
+    <None Include=".git\objects\b9\4ae27f1706185a3cae0c2fa1eccdb231b6afed" />
+    <None Include=".git\objects\b9\aa21e0e326c944af71243e719d994333addd6b" />
+    <None Include=".git\objects\bb\6b19ef45e64adf6763583649ff15a486246668" />
+    <None Include=".git\objects\c8\fd05d5137b2adba3563f2819127d416eb5c40e" />
+    <None Include=".git\objects\ca\49d151ac0300ec0bc9c97f2e5869173231e741" />
+    <None Include=".git\objects\ca\f03aa66f6d5bd83fb07d950a5eb31f28d1f973" />
+    <None Include=".git\objects\e1\d9bbd870766e43a310d9dbd0b5da76c910a1fb" />
+    <None Include=".git\objects\e6\0e41b5dfe85b9a023ae712c071e7aac8612ae7" />
+    <None Include=".git\objects\e7\7f256a1cdad1eb500f0987fa4cade401c39d92" />
+    <None Include=".git\objects\ea\74b4fbda0c4b5c702cfdb46240a7d64ee454d8" />
+    <None Include=".git\objects\ed\9269506e30c9aa0c492595348d14da6febe77b" />
+    <None Include=".git\objects\ed\c3cf7364405d8c7d05692ebe63e4c153fed515" />
+    <None Include=".git\objects\f4\343c7662a80bc000c3bdc05f65e25968e015ac" />
+    <None Include=".git\objects\f7\fe9babda1fb76cf7f88e9f41da800126020de1" />
+    <None Include=".git\objects\f8\b4888565caadc7510be75682268d6c18edd6de" />
+    <None Include=".git\objects\pack\pack-a7f63778979eda3c0ee010e6a2b11b2218e984b8.idx" />
+    <None Include=".git\objects\pack\pack-a7f63778979eda3c0ee010e6a2b11b2218e984b8.pack" />
+    <None Include=".git\objects\pack\pack-a7f63778979eda3c0ee010e6a2b11b2218e984b8.rev" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".git\refs\remotes\origin\main" />
+    <None Include=".vs\Pots-Plants-The-Game\FileContentIndex\650f2355-0dff-497c-8617-8bf798eafe68.vsidx" />
+    <None Include=".vs\Pots-Plants-The-Game\FileContentIndex\97bf693d-ee10-4300-ba35-18d95fef4cbc.vsidx" />
+    <None Include=".vs\Pots-Plants-The-Game\FileContentIndex\read.lock" />
+    <None Include=".vs\Pots-Plants-The-Game\v17\.wsuo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Asda.png" />
+    <Content Include="Resources\Dahlia1.png" />
+    <Content Include="Resources\Dahlia11.png" />
+    <Content Include="Resources\Dahlia2.png" />
+    <Content Include="Resources\Dahlia21.png" />
+    <Content Include="Resources\Dahlia3.png" />
+    <Content Include="Resources\Dahlia31.png" />
+    <Content Include="Resources\DahliaA1.png" />
+    <Content Include="Resources\DahliaA2.png" />
+    <Content Include="Resources\DahliaA3.png" />
+    <Content Include="Resources\rose.png" />
+    <Content Include="Resources\Rose1.png" />
+    <Content Include="Resources\Rose11.png" />
+    <Content Include="Resources\Rose12.png" />
+    <Content Include="Resources\Rose2.png" />
+    <Content Include="Resources\Rose21.png" />
+    <Content Include="Resources\Rose3.png" />
+    <Content Include="Resources\Rose31.png" />
+    <Content Include="Resources\Rose32.png" />
+    <Content Include="Resources\RoseA1.png" />
+    <Content Include="Resources\RoseA2.png" />
+    <Content Include="Resources\RoseA3.png" />
+    <Content Include="Resources\RoseA31.png" />
+    <Content Include="Resources\Surrender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\Pots-Plants-The-Game\FileContentIndex\merges\" />
+    <Folder Include=".vs\PotsAndPlants\v17\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

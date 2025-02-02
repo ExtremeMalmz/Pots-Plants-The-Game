@@ -1,0 +1,5 @@
+C:\Users\ericm\Documents\GitHub\Ass3 Info\Pots-Plants-The-Game\bin\Release\net6.0-windows\app.publish\Pot Plant the Game.exe
+C:\Users\ericm\Documents\GitHub\Ass3 Info\Pots-Plants-The-Game\bin\Release\net6.0-windows\app.publish\Pot Plant the Game.dll
+C:\Users\ericm\Documents\GitHub\Ass3 Info\Pots-Plants-The-Game\bin\Release\net6.0-windows\app.publish\Pot Plant the Game.deps.json
+C:\Users\ericm\Documents\GitHub\Ass3 Info\Pots-Plants-The-Game\bin\Release\net6.0-windows\app.publish\Pot Plant the Game.runtimeconfig.json
+C:\Users\ericm\Documents\GitHub\Ass3 Info\Pots-Plants-The-Game\bin\Release\net6.0-windows\app.publish\Pot Plant the Game.pdb
